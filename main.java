@@ -20,6 +20,12 @@ public class main {
         boilerExpress = showBoilerExpressInputDialog();
         dayOrWeekInput = showDayOrWeekOptionInputDialog();
 
+        output += "User Input: \n";
+        output += "Weeks Left: " + weeksLeft + "\n";
+        output += "Dining Dollars: " + diningDollars + "0\n";
+        output += "Boiler Express: " + boilerExpress + "0\n\n";
+
+        output += "Program Output: \n";
         if (dayOrWeekInput.equals("Day")) {
             output += "You can spend " + (Math.round(diningDollars / weeksLeft / 7)) + " dollars per day on dining using dining dollars.\n";
             if (budgetingInput.equals("Laundry")) {
@@ -30,13 +36,13 @@ public class main {
                 output += "You can spend " + (Math.floor(boilerExpress - (3.50 * weeksLeft)) / weeksLeft / 7) + " dollars per day on both.\n";
             }
         } else {
-            output += "You can spend " + (Math.round(diningDollars / weeksLeft)) + " dollars per week on dining using dining dollars.\n";
+            output += "You can spend " + (Math.round(diningDollars / weeksLeft)) + ".00 dollars per week on dining using dining dollars.\n";
             if (budgetingInput.equals("Laundry")) {
                 output += "You have " + (Math.floor(boilerExpress / 3.50)) + " loads of laundry left on your Boiler Express\n";
             } else if (budgetingInput.equals("Dining")) {
                 output += "You can spend " + (Math.round(boilerExpress / weeksLeft)) + " dollars per week on dining using Boiler Express.\n";
             } else if (budgetingInput.equals("Both")) {
-                output += "You can spend " + (Math.floor(boilerExpress - (3.50 * weeksLeft)) / weeksLeft) + " dollars per week on dining using Boiler Express\n and have enough to pay for laundry every week for the rest of the semester\n";
+                output += "You can spend " + (Math.floor(boilerExpress - (3.50 * weeksLeft)) / weeksLeft) + "0 dollars per week on dining using Boiler Express\n and have enough to pay for laundry every week for the rest of the semester\n";
             }
         }
 
