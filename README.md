@@ -6,6 +6,9 @@ Languages used: Java
 
 This application will help you calculate how much you can spend on dining and laundry using dining dollars or boiler express on a daily or weekly basis.
 
+![](example1.PNG)
+![](example2.PNG)
+
 
 
 
